@@ -472,7 +472,7 @@ def style_transfer(content_image, style_image,
     # in each call of this function, because we will add
     # operations to the graph so it can grow very large
     # and run out of RAM if we keep using the same instance.
-    model = vgg16.VGG16()
+    model = VGG16()
 
     # Create a TensorFlow-session.
     session = tf.InteractiveSession(graph=model.graph)
